@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.companyname.projectname.modulename.testbase.TestBase;
 import com.companyname.projectname.modulename.utilities.CommonMethods;
 
-public class RegisterUserWithPOMDP extends TestBase { // Inheritance- OOPs
+public class RegisterUserWithPOMDP2_GitDemo extends TestBase { // Inheritance- OOPs
 	
 	@BeforeClass
 	public void beforeTestCase() {
@@ -67,8 +67,6 @@ public class RegisterUserWithPOMDP extends TestBase { // Inheritance- OOPs
 //	
 //	CommonMethods.clickOnWebElement("//*[@id=\"optin\"]", "Receive special offers from our partners!");
 	
-// Deleted this statement	
-	// added something
 	} // Code Optimization 
 
 	@DataProvider

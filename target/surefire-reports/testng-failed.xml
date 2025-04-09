@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.companyname.projectname.modulename.listners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.companyname.projectname.modulename.testcases.LoginUserWithCorrectEmailAndPassword">
+        <methods>
+          <include name="loginUserWithCorrectEmailAndPassword"/>
+          <include name="beforeTestCase"/>
+          <include name="intialSetUp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.companyname.projectname.modulename.testcases.LoginUserWithCorrectEmailAndPassword -->
+      <class name="com.companyname.projectname.modulename.testcases.LoginUserWithIncorrectEmailAndPassword">
+        <methods>
+          <include name="intialSetUp"/>
+          <include name="loginUserWithIncorrectEmailAndPassword"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="beforeTestCase"/>
+        </methods>
+      </class> <!-- com.companyname.projectname.modulename.testcases.LoginUserWithIncorrectEmailAndPassword -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

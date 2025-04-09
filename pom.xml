@@ -5,6 +5,32 @@
 	<groupId>com.bymatautomation</groupId>
 	<artifactId>Selenium_Training_B17_MVN</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.0</version>
+				<configuration>
+					<testFailureIgnore>false</testFailureIgnore>
+					<suiteXmlFiles>
+						<suiteXmlFile>src\test\resources\runner\testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<fork>true</fork>
+					<source>17</source>
+					<target>17</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
 
 	<dependencies>
 		<!--
